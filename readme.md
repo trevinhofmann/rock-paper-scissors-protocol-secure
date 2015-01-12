@@ -1,6 +1,6 @@
-# RPSS: Rock-Paper-Scissors Secure
+# RPSPS: Rock-Paper-Scissors Protocol Secure
 
-RPSS is a peer-to-peer protocol for playing cryptographically secured games of rock-paper-scissors.
+RPSPS is a peer-to-peer protocol for playing cryptographically secured games of rock-paper-scissors.
 
 ## Abstract
 
@@ -8,9 +8,9 @@ A cryptographically secure implementation of rock-paper-scissors would allow pla
 
 ## Introduction
 
-Online gaming has come to rely on trusted third parties.  These trusted authorities tend to have upkeep costs that result in fees charged the the players.  The servers of trusted authorities become prime targets for malicious attackers.  Large amounts of funds are stored on these servers and must be protected by the authorities, presenting a counterparty risk to players.  RPSS allows players to hold funds in their own full control for the majority of their gaming experience.
+Online gaming has come to rely on trusted third parties.  These trusted authorities tend to have upkeep costs that result in fees charged the the players.  The servers of trusted authorities become prime targets for malicious attackers.  Large amounts of funds are stored on these servers and must be protected by the authorities, presenting a counterparty risk to players.  RPSPS allows players to hold funds in their own full control for the majority of their gaming experience.
 
-Trustless wagering systems exist, but most have been implemented inefficiently as coins layered on top of the Bitcoin protocol.  RPSS functions more efficiently with a direct communication channel between players and basic use of the Bitcoin block chain.  Players do not need to trade their bitcoins for another coin, and the protocol can be extended for similar assets.
+Trustless wagering systems exist, but most have been implemented inefficiently as coins layered on top of the Bitcoin protocol.  RPSPS functions more efficiently with a direct communication channel between players and basic use of the Bitcoin block chain.  Players do not need to trade their bitcoins for another coin, and the protocol can be extended for similar assets.
 
 
 ## Communication Flow
@@ -21,4 +21,4 @@ Once the escrow is funded, the players select their choice: rock, paper, or scis
 
 The game process is repeated a number of times according to the game parameters agreed to in the invitation. Additional coins are sent through the micropayment channel to batch multiple game results into a single transaction.
 
-After the entire round is completed and the winning payments have been received, both players create a new transaction to return their deposits from escrow back to themselves. This transaction is signed out of escrow by both players, concluding the RPSS connection.
+After the entire round is completed and the winning payments have been received, both players create a new transaction to return their deposits from escrow back to themselves. This transaction is signed out of escrow by both players, concluding the RPSPS connection.
